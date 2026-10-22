@@ -12,23 +12,21 @@ let freddyButtonDOM = document.getElementById('freddyCodeSubmit');
 
 /*
 
-EVENT LISTENERS!!
-
-*/
-
-marioButtonDOM!.addEventListener("click", () => {
-    window.location = 'mario'
-});
-
-freddyButtonDOM!.addEventListener("click", () => {
-    window.location = 'freddy'
-});
-
-/*
-
 FUNCTION DEFINITIONS!!
 
 */
+
+function runHomepage() {
+
+    marioButtonDOM.addEventListener("click", () => {
+        window.location = 'mario'
+    });
+
+    freddyButtonDOM.addEventListener("click", () => {
+        window.location = 'freddy'
+    });
+
+}
 
 function runFreddy() {
 
