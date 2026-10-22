@@ -6,7 +6,7 @@ CONSTANTS!
 
 
 let marioButtonDOM = document.getElementById('marioButton');
-let freddyButtonDOM = doucument.getElementById('freddyButton')
+let freddyButtonDOM = document.getElementById('freddyButton')
 
 /*
 
