@@ -8,7 +8,7 @@ CONSTANTS!
 let marioButtonDOM = document.getElementById('marioButton');
 let freddyButtonDOM = document.getElementById('freddyButton');
 let freddyInputDOM = document.getElementById('freddyInputCode');
-let freddyButtonDOM = document.getElementById('freddyCodeSubmit');
+let freddySubmitDOM = document.getElementById('freddyCodeSubmit');
 
 /*
 
@@ -30,7 +30,7 @@ function runHomepage() {
 
 function runFreddy() {
 
-    freddyButtonDOM.addEventListener("click", () => {
+    freddySubmitDOM.addEventListener("click", () => {
         console.log(freddyInputDOM.input)
     });
 
