@@ -6,7 +6,7 @@ CONSTANTS!
 
 
 let marioButtonDOM = document.getElementbyID('marioButton');
-let luigiButtonDOM = doucument.getElementbyID('luigiButton')
+let freddyButtonDOM = doucument.getElementbyID('freddyButton')
 
 /*
 
@@ -18,6 +18,6 @@ marioButtonDOM.addEventListener("click", function () {
     window.href = 'mario'
 });
 
-luigiButtonDOM.addEventListener("click", function () {
-    window.href = 'luigi'
+freddyButtonDOM.addEventListener("click", function () {
+    window.href = 'freddy'
 });
