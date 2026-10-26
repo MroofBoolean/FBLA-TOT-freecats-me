@@ -49,7 +49,7 @@ function renderHint(type) {
     }
 }
 
-funciton inputEntered() {
+function inputEntered() {
     if (inputValue === '1985') {
         renderHint('LM');
     } else if (inputValue === 'scare') {
