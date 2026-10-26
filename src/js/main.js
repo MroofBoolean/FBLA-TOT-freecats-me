@@ -8,5 +8,5 @@ let inputDOM = document.getElementById('codeInput');
 let submitDOM = document.getElementById('codeSubmit');
 
 submitDOM.addEventListener("click", () => {
-    console.log(inputDOM.input)
+    console.log(inputDOM.value)
 });
