@@ -8,7 +8,7 @@ let inputDOM = document.getElementById('codeInput');
 let submitDOM = document.getElementById('codeSubmit');
 
 submitDOM.addEventListener("click", () => {
-    inputValue = toLowerCase(inputDOM.value);
+    inputValue = inputDOM.value.toLowerCase();
 
     if (inputValue == '1985' || inputValue == 'scare') {
         console.log('happy');
