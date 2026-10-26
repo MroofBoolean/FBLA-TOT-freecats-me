@@ -28,7 +28,7 @@ document.addEventListener("keydown", () => {
 });
 
 document.addEventListener("keydown", () => {
-    if (event.key === "Enter" && document.activeElement === 'input#codeInput') {
+    if (event.key === "Enter" && document.activeElement == 'input#codeInput') {
         inputEntered();
     }
 });
