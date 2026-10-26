@@ -8,7 +8,6 @@ let inputDOM = document.getElementById('codeInput');
 let submitDOM = document.getElementById('codeSubmit');
 let imageDOM = document.getElementById('scareImage')
 
-
 /* 
 
 MAIN LOGIC!
@@ -18,19 +17,19 @@ MAIN LOGIC!
 submitDOM.addEventListener("click", () => {
     inputValue = inputDOM.value.toLowerCase();
 
-    if (inputValue === '1985') {
-        renderHint('LM');
-    } else if (inputValue === 'scare') {
-        renderHint('FNAF');
-    } else {
-        renderScare();
-    }
+    inputEntered();
 
 });
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", () => {
     if (event.key === "^") {
         console.log("^ was pressed!");
+    }
+});
+
+document.addEventListener("keydown", () => {
+    if (event.key === "Enter" && document.activeElement === 'input#codeInput') {
+        inputEntered();
     }
 });
 
@@ -47,6 +46,16 @@ function renderHint(type) {
     } else if (type === 'FNAF') {
         imageDOM.src = 'https://media.tenor.com/BWB9cDCdCaUAAAAM/fnaf-five-nights-at-freddy%27s.gif'
         flashImage()
+    }
+}
+
+funciton inputEntered() {
+    if (inputValue === '1985') {
+        renderHint('LM');
+    } else if (inputValue === 'scare') {
+        renderHint('FNAF');
+    } else {
+        renderScare();
     }
 }
 
