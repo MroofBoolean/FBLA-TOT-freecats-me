@@ -6,7 +6,7 @@ CONSTANTS!
 
 let inputDOM = document.getElementById('codeInput');
 let submitDOM = document.getElementById('codeSubmit');
-let imageDOM = document.getElementById('scareImage')
+let imageDOM = document.getElementById('scareImage');
 
 /* 
 
@@ -23,7 +23,8 @@ submitDOM.addEventListener("click", () => {
 
 document.addEventListener("keydown", () => {
     if (event.key === "^") {
-        console.log("^ was pressed!");
+    document.body.classList.toggle('fnafStyle');
+    document.body.classList.toggle('lmStyle');
     }
 });
 

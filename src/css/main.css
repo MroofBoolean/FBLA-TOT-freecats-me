@@ -1,6 +1,11 @@
 body {
     color: white;
     background-color: black;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img#scareImage {
@@ -9,4 +14,23 @@ img#scareImage {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#mainBox {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.fnafStyle {
+  background-image: url('https://vignette.wikia.nocookie.net/fnaf-sister-location/images/a/a3/CameraStatic.gif/revision/latest/scale-to-width-down/439?cb=20170601041820');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lmStyle {
+  background-image: url('https://wallpapers.com/images/hd/luigi-s-mansion-3-tall-mansion-in-the-mountains-wiwnxpcpim84bq7q.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
